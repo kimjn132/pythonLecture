@@ -1,0 +1,27 @@
+Age 는 다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요 있음 평균나잇대가 더 높음
+
+Weight는 다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요가 있음 더 무거움
+
+Height는 다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요가 있음 키가 더 큼
+
+BMI다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요가 있음  BMI가 더 높음
+
+Pulse rate는 이상치 2개 제거하고 다시 찍어봄. 분포 비슷해서 의미없을듯
+Cycle length는 다른 분포가 보임. 범위 나눠서 보여줄 필요가 있음. 기간이 더 짧음
+Marraige Status는 거의 의미가 없는 데이터로 보임.
+Hip은 다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요가 있음 엉덩이가 더 큼
+Waist는 다른 분포가 보임. 숫자로 범위 나눠서 보여줄 필요가 있음 허리가 더 굵음
+Waist:Hip Ratio는 거의 비슷해서 보여줄 필요가 없을듯.
+BP_Systolic은 거의 비슷해서 보여줄 필요 없음
+BP_Diastolic은 거의 비슷해서 보여줄 필요 없음
+
+Blood Type 의미 없어보임
+Pregnant 의미 없어보임
+aborptions 의미 없어보임
+weight gain 의미 있음
+hair growth 의미 있음
+Skin darkening 의미 있음
+Hair loss 의미있음
+Pimples 의미 있음
+Fast food 의미 있음
+Reg.Exercise 의미 없어보임.

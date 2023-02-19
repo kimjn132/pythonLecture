@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2885b84969880181e5f5880d9eeefa31 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2885b84969880181e5f5880d9eeefa31" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2885b84969880181e5f5880d9eeefa31 = L.map(
+                "map_2885b84969880181e5f5880d9eeefa31",
+                {
+                    center: [37.544, 127.1256],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7dd993580370c39ffa17d5831ae7d094 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var marker_66c19c448eb35d4af65303dc06cf1767 = L.marker(
+                [37.513785621381885, 127.10769920017124],
+                {"title": "\uace0\uc740\ube5b\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_784819e50d3bebee9a49af83604cf44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_66c19c448eb35d4af65303dc06cf1767.setIcon(icon_784819e50d3bebee9a49af83604cf44f);
+        
+    
+        var popup_a413384f63d6940299e87eccad8e75ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_20da6afb05acd23f4e8fe31af15e6e01 = $(`<div id="html_20da6afb05acd23f4e8fe31af15e6e01" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>고은빛산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 송파구 오금로 95, 국제빌딩 지하1층, 2~8층 (방이동)<br>             <b>전화번호:</b> 02-421-3030<br>         </p>     </div>     </div>`)[0];
+                popup_a413384f63d6940299e87eccad8e75ee.setContent(html_20da6afb05acd23f4e8fe31af15e6e01);
+            
+        
+
+        marker_66c19c448eb35d4af65303dc06cf1767.bindPopup(popup_a413384f63d6940299e87eccad8e75ee)
+        ;
+
+        
+    
+    
+            var marker_a21020115cbbf20963d3376528beddb2 = L.marker(
+                [37.4796673949, 127.12491204910002],
+                {"title": "\uae40\ubbf8\uacbd\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_aeb47709d7e3c5f002043fafe05e0427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a21020115cbbf20963d3376528beddb2.setIcon(icon_aeb47709d7e3c5f002043fafe05e0427);
+        
+    
+        var popup_1aca15f08865d431fcc5e6b7e317f23b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1e3bae1a2473c954c5db4cf9968e4e8 = $(`<div id="html_e1e3bae1a2473c954c5db4cf9968e4e8" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>김미경산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 송파구 송파대로 111, 205동 313호 (문정동, 파크하비오)<br>             <b>전화번호:</b> 02-401-2256<br>         </p>     </div>     </div>`)[0];
+                popup_1aca15f08865d431fcc5e6b7e317f23b.setContent(html_e1e3bae1a2473c954c5db4cf9968e4e8);
+            
+        
+
+        marker_a21020115cbbf20963d3376528beddb2.bindPopup(popup_1aca15f08865d431fcc5e6b7e317f23b)
+        ;
+
+        
+    
+    
+            var marker_42f830e4673975ae452d449de6c5791b = L.marker(
+                [37.59024195490788, 127.01547799744203],
+                {"title": "\ub8e8\uc2dc\ub098\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_9ae26829d3c28b846903cfad0e3ec18e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_42f830e4673975ae452d449de6c5791b.setIcon(icon_9ae26829d3c28b846903cfad0e3ec18e);
+        
+    
+        var popup_ce629627a4f27abccb6f90b95cbf5df1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5070a54d7d8741b6db2014786dc8d3d4 = $(`<div id="html_5070a54d7d8741b6db2014786dc8d3d4" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>루시나산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 성북구 보문로 180, 외 1동 (삼선동4가, 지하1, 지상2,3,4,5,8,9,10층)<br>             <b>전화번호:</b> 02-922-7474<br>         </p>     </div>     </div>`)[0];
+                popup_ce629627a4f27abccb6f90b95cbf5df1.setContent(html_5070a54d7d8741b6db2014786dc8d3d4);
+            
+        
+
+        marker_42f830e4673975ae452d449de6c5791b.bindPopup(popup_ce629627a4f27abccb6f90b95cbf5df1)
+        ;
+
+        
+    
+    
+            var marker_f358db94638c357aa1a7efce352665eb = L.marker(
+                [37.5162225985, 127.0350110748],
+                {"title": "\ubbf8\ub798\uc640\ud76c\ub9dd\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_e03a8760c71d2205d5f3a911f721ce62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f358db94638c357aa1a7efce352665eb.setIcon(icon_e03a8760c71d2205d5f3a911f721ce62);
+        
+    
+        var popup_44f0b628a818aec3970a97593ce60a05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d1985de06e180387f7595f36900423a = $(`<div id="html_1d1985de06e180387f7595f36900423a" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>미래와희망산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 강남구 언주로 707, 지하1층~11층 (논현동)<br>             <b>전화번호:</b> 02-3446-0011<br>         </p>     </div>     </div>`)[0];
+                popup_44f0b628a818aec3970a97593ce60a05.setContent(html_1d1985de06e180387f7595f36900423a);
+            
+        
+
+        marker_f358db94638c357aa1a7efce352665eb.bindPopup(popup_44f0b628a818aec3970a97593ce60a05)
+        ;
+
+        
+    
+    
+            var marker_2c59740859329ed75822b66ad70fb7e3 = L.marker(
+                [37.49135898306488, 127.08773840102756],
+                {"title": "\ubc15\uc120\ud61c\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_fdc1089d4428e63c2396f9283e403dbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2c59740859329ed75822b66ad70fb7e3.setIcon(icon_fdc1089d4428e63c2396f9283e403dbc);
+        
+    
+        var popup_a5de98dc5bb4a28b261d81db0b9c6d30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25a824d7ed9c173ac09c9e0cd6f6cadd = $(`<div id="html_25a824d7ed9c173ac09c9e0cd6f6cadd" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>박선혜산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 강남구 양재대로55길 7, 지하1층,4층 (일원동)<br>             <b>전화번호:</b> 02-3411-3070<br>         </p>     </div>     </div>`)[0];
+                popup_a5de98dc5bb4a28b261d81db0b9c6d30.setContent(html_25a824d7ed9c173ac09c9e0cd6f6cadd);
+            
+        
+
+        marker_2c59740859329ed75822b66ad70fb7e3.bindPopup(popup_a5de98dc5bb4a28b261d81db0b9c6d30)
+        ;
+
+        
+    
+    
+            var marker_7e5b0cd5a525d4c28449975b6ebfb418 = L.marker(
+                [37.5586422818, 126.9559736848],
+                {"title": "\uc0ac\ub77c\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_b1fd5eed4d7bec32bebfccb62f2aac8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7e5b0cd5a525d4c28449975b6ebfb418.setIcon(icon_b1fd5eed4d7bec32bebfccb62f2aac8a);
+        
+    
+        var popup_08ec228a50b904a3a3394f01124b685d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61da10c818b2abe0226c428c7fbdb1e1 = $(`<div id="html_61da10c818b2abe0226c428c7fbdb1e1" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>사라산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 서대문구 신촌로35길 10, 지하1층 416,412호 (북아현동, e편한세상신촌4단지)<br>             <b>전화번호:</b> 02-392-0030<br>         </p>     </div>     </div>`)[0];
+                popup_08ec228a50b904a3a3394f01124b685d.setContent(html_61da10c818b2abe0226c428c7fbdb1e1);
+            
+        
+
+        marker_7e5b0cd5a525d4c28449975b6ebfb418.bindPopup(popup_08ec228a50b904a3a3394f01124b685d)
+        ;
+
+        
+    
+    
+            var marker_a5b1646588079dd146a4b15f446ee184 = L.marker(
+                [37.5612660781, 126.9853632831],
+                {"title": "\uc138\ub9b0\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_8b0fd43c5eca8e403c9198f0febf8183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a5b1646588079dd146a4b15f446ee184.setIcon(icon_8b0fd43c5eca8e403c9198f0febf8183);
+        
+    
+        var popup_80ea64bbe5f441a993bb5da3afff461a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42dd92d615bfcfd1aa48d3053470bc12 = $(`<div id="html_42dd92d615bfcfd1aa48d3053470bc12" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>세린산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 중구 퇴계로 123, 8층 (충무로2가, 하이헤리엇)<br>             <b>전화번호:</b> 02-6261-3600<br>         </p>     </div>     </div>`)[0];
+                popup_80ea64bbe5f441a993bb5da3afff461a.setContent(html_42dd92d615bfcfd1aa48d3053470bc12);
+            
+        
+
+        marker_a5b1646588079dd146a4b15f446ee184.bindPopup(popup_80ea64bbe5f441a993bb5da3afff461a)
+        ;
+
+        
+    
+    
+            var marker_99b4618e3c0cfd1d7e4dd66bbd40917f = L.marker(
+                [37.566590498762, 127.02408246322],
+                {"title": "\uc13c\ud2b8\ub77c\uc2a4\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_57514fd06ad047f7496aef296356ee94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_99b4618e3c0cfd1d7e4dd66bbd40917f.setIcon(icon_57514fd06ad047f7496aef296356ee94);
+        
+    
+        var popup_763692bfd1117ed4b3530b44b45d3207 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cc9dbd41c25a910cca5254341a6b957 = $(`<div id="html_0cc9dbd41c25a910cca5254341a6b957" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>센트라스산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 성동구 왕십리로 410, 상가 L동 1층 132호 (하왕십리동, 센트라스)<br>             <b>전화번호:</b> 02-2297-9887<br>         </p>     </div>     </div>`)[0];
+                popup_763692bfd1117ed4b3530b44b45d3207.setContent(html_0cc9dbd41c25a910cca5254341a6b957);
+            
+        
+
+        marker_99b4618e3c0cfd1d7e4dd66bbd40917f.bindPopup(popup_763692bfd1117ed4b3530b44b45d3207)
+        ;
+
+        
+    
+    
+            var marker_16d4b0b5fa8e23702695427d25f9f6d7 = L.marker(
+                [37.53367806439041, 126.90291824743863],
+                {"title": "\uc544\uc774\uc5d8\uc0b0\ubd80\uc778\uacfc\uc18c\uc544\uccad\uc18c\ub144\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_d44d25aaf9cd3445fdafbd8c2aed59e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_16d4b0b5fa8e23702695427d25f9f6d7.setIcon(icon_d44d25aaf9cd3445fdafbd8c2aed59e8);
+        
+    
+        var popup_f89cfc2dca9570a7e894ca0af7076e1a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a96822ca76c4ea8b78264147fa9b138 = $(`<div id="html_0a96822ca76c4ea8b78264147fa9b138" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>아이엘산부인과소아청소년과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 영등포구 양평로 32, 지하1,2,3층 (당산동6가)<br>             <b>전화번호:</b> 02-2068-5111<br>         </p>     </div>     </div>`)[0];
+                popup_f89cfc2dca9570a7e894ca0af7076e1a.setContent(html_0a96822ca76c4ea8b78264147fa9b138);
+            
+        
+
+        marker_16d4b0b5fa8e23702695427d25f9f6d7.bindPopup(popup_f89cfc2dca9570a7e894ca0af7076e1a)
+        ;
+
+        
+    
+    
+            var marker_5a3ce11932b044b6c780c344cf8ccc26 = L.marker(
+                [37.46990721025003, 126.89704833602327],
+                {"title": "\uc5e0\uc81c\uc774\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_5a34486b1f94a87a47c46ce5278cd83b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5a3ce11932b044b6c780c344cf8ccc26.setIcon(icon_5a34486b1f94a87a47c46ce5278cd83b);
+        
+    
+        var popup_360f6ad058e2479b244fa9d9caba829d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8fed5ff5b31fda8e03565f9e38dfc12a = $(`<div id="html_8fed5ff5b31fda8e03565f9e38dfc12a" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>엠제이산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 금천구 두산로 81, 지하1층,2~8층 (독산동)<br>             <b>전화번호:</b> 02-2109-3000<br>         </p>     </div>     </div>`)[0];
+                popup_360f6ad058e2479b244fa9d9caba829d.setContent(html_8fed5ff5b31fda8e03565f9e38dfc12a);
+            
+        
+
+        marker_5a3ce11932b044b6c780c344cf8ccc26.bindPopup(popup_360f6ad058e2479b244fa9d9caba829d)
+        ;
+
+        
+    
+    
+            var marker_a4bb53466049c7d2eb873141a108b8f4 = L.marker(
+                [37.5623939619, 127.0332262552],
+                {"title": "\uc5f0\uc138\ub354\ube14\uc720\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_3c2fc73cd647cfee4c952f151f0cbdfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a4bb53466049c7d2eb873141a108b8f4.setIcon(icon_3c2fc73cd647cfee4c952f151f0cbdfc);
+        
+    
+        var popup_a94aeab7db57bf740c616d599a3dfd53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c59e4611bb5aada65a0bb73eb470eb51 = $(`<div id="html_c59e4611bb5aada65a0bb73eb470eb51" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>연세더블유산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 성동구 왕십리로 327, 4층 (하왕십리동)<br>             <b>전화번호:</b> 02-2281-0045<br>         </p>     </div>     </div>`)[0];
+                popup_a94aeab7db57bf740c616d599a3dfd53.setContent(html_c59e4611bb5aada65a0bb73eb470eb51);
+            
+        
+
+        marker_a4bb53466049c7d2eb873141a108b8f4.bindPopup(popup_a94aeab7db57bf740c616d599a3dfd53)
+        ;
+
+        
+    
+    
+            var marker_f2872715db7f798753817b565b0bcea0 = L.marker(
+                [37.53359879170921, 127.00869822897556],
+                {"title": "\uc5f0\uc138\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_d969a84e3a86df97dcec215ec5f0c516 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f2872715db7f798753817b565b0bcea0.setIcon(icon_d969a84e3a86df97dcec215ec5f0c516);
+        
+    
+        var popup_347f45df1e6a27da5a2cdee1fe2c2a3b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a8e7ae308e1217c6a9f953d51523ac7 = $(`<div id="html_8a8e7ae308e1217c6a9f953d51523ac7" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>연세산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 용산구 독서당로 70, 301호(한남동,현대리버티하우스)<br>             <b>전화번호:</b> 02-790-0802<br>         </p>     </div>     </div>`)[0];
+                popup_347f45df1e6a27da5a2cdee1fe2c2a3b.setContent(html_8a8e7ae308e1217c6a9f953d51523ac7);
+            
+        
+
+        marker_f2872715db7f798753817b565b0bcea0.bindPopup(popup_347f45df1e6a27da5a2cdee1fe2c2a3b)
+        ;
+
+        
+    
+    
+            var marker_db2d1b5725b69d860b620656e7103758 = L.marker(
+                [37.5667996863316, 126.966255525958],
+                {"title": "\uc5f0\uc138\uc870\uc774\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_04f9a7721339dfbdfd0fff8e754690dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db2d1b5725b69d860b620656e7103758.setIcon(icon_04f9a7721339dfbdfd0fff8e754690dd);
+        
+    
+        var popup_c0e41d580070099827d54ba2d8c056b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_104472f5ff43efa29b8ece0fcdef951d = $(`<div id="html_104472f5ff43efa29b8ece0fcdef951d" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>연세조이산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 종로구 통일로 134, 디타워(돈의문) 지하 1층 102호 (평동)<br>             <b>전화번호:</b> 02-2135-9191<br>         </p>     </div>     </div>`)[0];
+                popup_c0e41d580070099827d54ba2d8c056b6.setContent(html_104472f5ff43efa29b8ece0fcdef951d);
+            
+        
+
+        marker_db2d1b5725b69d860b620656e7103758.bindPopup(popup_c0e41d580070099827d54ba2d8c056b6)
+        ;
+
+        
+    
+    
+            var marker_bbea4695ed815b6d2587ef30c9753dab = L.marker(
+                [37.60329166666666, 127.03774722222222],
+                {"title": "\uc628\ub204\ub9ac\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_783574c248f7287c437486f9a8e8bd4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bbea4695ed815b6d2587ef30c9753dab.setIcon(icon_783574c248f7287c437486f9a8e8bd4b);
+        
+    
+        var popup_797413b2e7ebad3f864e90351432a76a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bb51038e5b9fbe0c1d4e182315e6950 = $(`<div id="html_6bb51038e5b9fbe0c1d4e182315e6950" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>온누리산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 성북구 오패산로 10 (하월곡동)<br>             <b>전화번호:</b> 02-919-2321<br>         </p>     </div>     </div>`)[0];
+                popup_797413b2e7ebad3f864e90351432a76a.setContent(html_6bb51038e5b9fbe0c1d4e182315e6950);
+            
+        
+
+        marker_bbea4695ed815b6d2587ef30c9753dab.bindPopup(popup_797413b2e7ebad3f864e90351432a76a)
+        ;
+
+        
+    
+    
+            var marker_257b2e5bb14789ab3d081aed634bf630 = L.marker(
+                [37.5249602205031, 127.040210980624],
+                {"title": "\uc640\uc774\ud038\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_10483ff699657b09f0cc541b8059113b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_257b2e5bb14789ab3d081aed634bf630.setIcon(icon_10483ff699657b09f0cc541b8059113b);
+        
+    
+        var popup_fae73c747b983c654908441c14874f21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe9cc72a95281282f6a5d39901c870b2 = $(`<div id="html_fe9cc72a95281282f6a5d39901c870b2" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>와이퀸산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 강남구 선릉로 820, 1층, 지하1층 (청담동)<br>             <b>전화번호:</b> 02-555-8278<br>         </p>     </div>     </div>`)[0];
+                popup_fae73c747b983c654908441c14874f21.setContent(html_fe9cc72a95281282f6a5d39901c870b2);
+            
+        
+
+        marker_257b2e5bb14789ab3d081aed634bf630.bindPopup(popup_fae73c747b983c654908441c14874f21)
+        ;
+
+        
+    
+    
+            var marker_53ff6a06280b4877cc38c5c41ad5ead0 = L.marker(
+                [37.450416536425344, 126.90944230157562],
+                {"title": "\uc774\uc131\ub9bc \uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_d60207f55ccf0d285c38e94d78e46606 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_53ff6a06280b4877cc38c5c41ad5ead0.setIcon(icon_d60207f55ccf0d285c38e94d78e46606);
+        
+    
+        var popup_5198eb089d3114e12f92862bc6030b9c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd73824b38264aa2c849721c2ed1c159 = $(`<div id="html_dd73824b38264aa2c849721c2ed1c159" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>이성림 산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 금천구 금하로 720 (시흥동)<br>             <b>전화번호:</b> 02-807-3390<br>         </p>     </div>     </div>`)[0];
+                popup_5198eb089d3114e12f92862bc6030b9c.setContent(html_dd73824b38264aa2c849721c2ed1c159);
+            
+        
+
+        marker_53ff6a06280b4877cc38c5c41ad5ead0.bindPopup(popup_5198eb089d3114e12f92862bc6030b9c)
+        ;
+
+        
+    
+    
+            var marker_d43d5255a6191a026bde4aa6a76db9f4 = L.marker(
+                [37.6026764656, 127.0417737656],
+                {"title": "\uc81c\ub2c8\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_1834dd77e147f7a66ce35b5d7e4a28b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d43d5255a6191a026bde4aa6a76db9f4.setIcon(icon_1834dd77e147f7a66ce35b5d7e4a28b6);
+        
+    
+        var popup_6b2ce72d3268ed8de12973c2a2805180 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_91cc1974c0c81baa0bd9062e475fc14d = $(`<div id="html_91cc1974c0c81baa0bd9062e475fc14d" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>제니산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 성북구 화랑로 87, 4층 (하월곡동, 류성빌딩)<br>             <b>전화번호:</b> 02-941-3892<br>         </p>     </div>     </div>`)[0];
+                popup_6b2ce72d3268ed8de12973c2a2805180.setContent(html_91cc1974c0c81baa0bd9062e475fc14d);
+            
+        
+
+        marker_d43d5255a6191a026bde4aa6a76db9f4.bindPopup(popup_6b2ce72d3268ed8de12973c2a2805180)
+        ;
+
+        
+    
+    
+            var marker_6b0e33891917cbdfac236734041273e2 = L.marker(
+                [37.6366190323, 127.0645381361],
+                {"title": "\uc81c\uc77c\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_380c80c81f9b7b637c7ecf502550e4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6b0e33891917cbdfac236734041273e2.setIcon(icon_380c80c81f9b7b637c7ecf502550e4da);
+        
+    
+        var popup_ede5603075ee5095ad8b36b08c3c9224 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3576aa0e6ac3a511e78eb548886c772a = $(`<div id="html_3576aa0e6ac3a511e78eb548886c772a" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>제일산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 노원구 섬밭로 229 , 306호 (하계동, 극동,건영,벽산아파트)<br>             <b>전화번호:</b> 02-948-2870<br>         </p>     </div>     </div>`)[0];
+                popup_ede5603075ee5095ad8b36b08c3c9224.setContent(html_3576aa0e6ac3a511e78eb548886c772a);
+            
+        
+
+        marker_6b0e33891917cbdfac236734041273e2.bindPopup(popup_ede5603075ee5095ad8b36b08c3c9224)
+        ;
+
+        
+    
+    
+            var marker_4e21fad404e71f5f7a156c7c571bf389 = L.marker(
+                [37.57940480942696, 126.8904186172296],
+                {"title": "\uc870\uc9c0\uc5f0\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_d56842241ae174bf7ea5b1bda5c8528f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4e21fad404e71f5f7a156c7c571bf389.setIcon(icon_d56842241ae174bf7ea5b1bda5c8528f);
+        
+    
+        var popup_1ca21ec3a43ef67dcc305328ce4458ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b4d7a601e13bfa0c7bbc0f134587254 = $(`<div id="html_5b4d7a601e13bfa0c7bbc0f134587254" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>조지연산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 마포구 월드컵북로 396, 지하1층 1014,1015호 (상암동, 누리꿈스퀘어)<br>             <b>전화번호:</b> 02-2132-8033<br>         </p>     </div>     </div>`)[0];
+                popup_1ca21ec3a43ef67dcc305328ce4458ab.setContent(html_5b4d7a601e13bfa0c7bbc0f134587254);
+            
+        
+
+        marker_4e21fad404e71f5f7a156c7c571bf389.bindPopup(popup_1ca21ec3a43ef67dcc305328ce4458ab)
+        ;
+
+        
+    
+    
+            var marker_e23b042f842164f1ebbe1fab89bfb240 = L.marker(
+                [37.577210914000005, 127.0585185926],
+                {"title": "\ucd5c\uc740\ub9bc\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_27232e1f414a42c0b0df94a8ca92b377 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e23b042f842164f1ebbe1fab89bfb240.setIcon(icon_27232e1f414a42c0b0df94a8ca92b377);
+        
+    
+        var popup_a446113057e75bc95977a52c5feb172c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83ac8d0e4d5b6669f44889a57ab00427 = $(`<div id="html_83ac8d0e4d5b6669f44889a57ab00427" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>최은림산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 동대문구 사가정로 122, 308, 309호 (전농동, 전농동하우스토리)<br>             <b>전화번호:</b> 02-2217-5614<br>         </p>     </div>     </div>`)[0];
+                popup_a446113057e75bc95977a52c5feb172c.setContent(html_83ac8d0e4d5b6669f44889a57ab00427);
+            
+        
+
+        marker_e23b042f842164f1ebbe1fab89bfb240.bindPopup(popup_a446113057e75bc95977a52c5feb172c)
+        ;
+
+        
+    
+    
+            var marker_901e2b605ffac16f24acec881dba12be = L.marker(
+                [37.67912139854208, 127.0549528594317],
+                {"title": "\ud050\ube45\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_736027e6919fc1c5eb7560b49b3a9854 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_901e2b605ffac16f24acec881dba12be.setIcon(icon_736027e6919fc1c5eb7560b49b3a9854);
+        
+    
+        var popup_87093a10037373be32c1c7fab6391c29 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b1c025c0eec2ba7ed0ee2dcad280408 = $(`<div id="html_4b1c025c0eec2ba7ed0ee2dcad280408" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>큐빅산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 노원구 동일로 1689, 207호(상계동,하이베라스)<br>             <b>전화번호:</b> 02-930-1450<br>         </p>     </div>     </div>`)[0];
+                popup_87093a10037373be32c1c7fab6391c29.setContent(html_4b1c025c0eec2ba7ed0ee2dcad280408);
+            
+        
+
+        marker_901e2b605ffac16f24acec881dba12be.bindPopup(popup_87093a10037373be32c1c7fab6391c29)
+        ;
+
+        
+    
+    
+            var marker_9c3c40a587f8b595ba558bd99a08f6ed = L.marker(
+                [37.57635011810339, 126.97279912680303],
+                {"title": "\ud55c\ube5b\uc0b0\ubd80\uc778\uacfc\uc758\uc6d0"}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+            var icon_e93c34998978782f6caf60862485c6df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9c3c40a587f8b595ba558bd99a08f6ed.setIcon(icon_e93c34998978782f6caf60862485c6df);
+        
+    
+        var popup_33b2edf093bad5912d969cdef9b0f1b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_11a504f48456709363b4265f39a56cb9 = $(`<div id="html_11a504f48456709363b4265f39a56cb9" style="width: 100.0%; height: 100.0%;">     <style>         .section-title {             font-size: 36px;             font-weight: bold;             text-transform: uppercase;             letter-spacing: 2px;             color: #ff66cc;             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);             }         .section-content {             background: linear-gradient(to bottom, #fff, #f1f1f1);             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);             padding: 15px;             position: relative;             }         .section-content p {             font-size: 13px;             line-height: 1.5;             }         @media (max-width: 768px) {         .section-content {                 padding: 5px;             }         }     </style>     <div class="section-title">         <h5>한빛산부인과의원</h5>     </div>     <div class="section-content">         <p>             <b>주소:</b> 서울특별시 종로구 자하문로2길 4, 201호 (적선동, 경복빌딩)<br>             <b>전화번호:</b> 02-734-7582<br>         </p>     </div>     </div>`)[0];
+                popup_33b2edf093bad5912d969cdef9b0f1b0.setContent(html_11a504f48456709363b4265f39a56cb9);
+            
+        
+
+        marker_9c3c40a587f8b595ba558bd99a08f6ed.bindPopup(popup_33b2edf093bad5912d969cdef9b0f1b0)
+        ;
+
+        
+    
+    
+            var circle_marker_fd518c727d55f12253e3e8cb02a9adeb = L.circleMarker(
+                [37.513785621381885, 127.10769920017124],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_57972c35767e68a076b4383f0cef2387 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43e390da67a1fad5c1efc791473d69dc = $(`<div id="html_43e390da67a1fad5c1efc791473d69dc" style="width: 100.0%; height: 100.0%;">고은빛산부인과의원</div>`)[0];
+                popup_57972c35767e68a076b4383f0cef2387.setContent(html_43e390da67a1fad5c1efc791473d69dc);
+            
+        
+
+        circle_marker_fd518c727d55f12253e3e8cb02a9adeb.bindPopup(popup_57972c35767e68a076b4383f0cef2387)
+        ;
+
+        
+    
+    
+            var circle_marker_246a237869aaa07dcfa7d408c9ec2ae2 = L.circleMarker(
+                [37.4796673949, 127.12491204910002],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_1fe1876ec4c4bdf8f1d7a9fff3d2bc87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e18d79b06837f9af1ec7205f0fa9b90 = $(`<div id="html_6e18d79b06837f9af1ec7205f0fa9b90" style="width: 100.0%; height: 100.0%;">김미경산부인과의원</div>`)[0];
+                popup_1fe1876ec4c4bdf8f1d7a9fff3d2bc87.setContent(html_6e18d79b06837f9af1ec7205f0fa9b90);
+            
+        
+
+        circle_marker_246a237869aaa07dcfa7d408c9ec2ae2.bindPopup(popup_1fe1876ec4c4bdf8f1d7a9fff3d2bc87)
+        ;
+
+        
+    
+    
+            var circle_marker_e7e605924a55652d06fe11eef12e4cf3 = L.circleMarker(
+                [37.59024195490788, 127.01547799744203],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_721cdf5f497bf02d287ba17381690a8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c5ac919bb8782d5080d827c4489316d = $(`<div id="html_8c5ac919bb8782d5080d827c4489316d" style="width: 100.0%; height: 100.0%;">루시나산부인과의원</div>`)[0];
+                popup_721cdf5f497bf02d287ba17381690a8b.setContent(html_8c5ac919bb8782d5080d827c4489316d);
+            
+        
+
+        circle_marker_e7e605924a55652d06fe11eef12e4cf3.bindPopup(popup_721cdf5f497bf02d287ba17381690a8b)
+        ;
+
+        
+    
+    
+            var circle_marker_867882bc4520c916f7e819f099521167 = L.circleMarker(
+                [37.5162225985, 127.0350110748],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_be1c535d6be1e97f735c51e16ec50644 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a0eb3e123189cae0264695259613cc = $(`<div id="html_c7a0eb3e123189cae0264695259613cc" style="width: 100.0%; height: 100.0%;">미래와희망산부인과의원</div>`)[0];
+                popup_be1c535d6be1e97f735c51e16ec50644.setContent(html_c7a0eb3e123189cae0264695259613cc);
+            
+        
+
+        circle_marker_867882bc4520c916f7e819f099521167.bindPopup(popup_be1c535d6be1e97f735c51e16ec50644)
+        ;
+
+        
+    
+    
+            var circle_marker_6977ddf65a5433ee230143659846037b = L.circleMarker(
+                [37.49135898306488, 127.08773840102756],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_4c15b38ab425955d27fec4810c291bba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_870ad5904e1df8fd3f7baaa48f7d9633 = $(`<div id="html_870ad5904e1df8fd3f7baaa48f7d9633" style="width: 100.0%; height: 100.0%;">박선혜산부인과의원</div>`)[0];
+                popup_4c15b38ab425955d27fec4810c291bba.setContent(html_870ad5904e1df8fd3f7baaa48f7d9633);
+            
+        
+
+        circle_marker_6977ddf65a5433ee230143659846037b.bindPopup(popup_4c15b38ab425955d27fec4810c291bba)
+        ;
+
+        
+    
+    
+            var circle_marker_76650e8a812afcbd87d7066b08c319cb = L.circleMarker(
+                [37.5586422818, 126.9559736848],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_d65a05809cc842cd35ec41a173110415 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_065ac37029ef5c9da77de9835e34821e = $(`<div id="html_065ac37029ef5c9da77de9835e34821e" style="width: 100.0%; height: 100.0%;">사라산부인과의원</div>`)[0];
+                popup_d65a05809cc842cd35ec41a173110415.setContent(html_065ac37029ef5c9da77de9835e34821e);
+            
+        
+
+        circle_marker_76650e8a812afcbd87d7066b08c319cb.bindPopup(popup_d65a05809cc842cd35ec41a173110415)
+        ;
+
+        
+    
+    
+            var circle_marker_ca7680d6ab3ab58c2cebaff12890078f = L.circleMarker(
+                [37.5612660781, 126.9853632831],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_99c3c96f7aa9f16c4a4c5e1362b53e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb2743d230540c1a9371879c50d1c4a4 = $(`<div id="html_fb2743d230540c1a9371879c50d1c4a4" style="width: 100.0%; height: 100.0%;">세린산부인과의원</div>`)[0];
+                popup_99c3c96f7aa9f16c4a4c5e1362b53e5c.setContent(html_fb2743d230540c1a9371879c50d1c4a4);
+            
+        
+
+        circle_marker_ca7680d6ab3ab58c2cebaff12890078f.bindPopup(popup_99c3c96f7aa9f16c4a4c5e1362b53e5c)
+        ;
+
+        
+    
+    
+            var circle_marker_8c66fe29314250c5a3f0c3485c29880d = L.circleMarker(
+                [37.566590498762, 127.02408246322],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_87fa5f4a7b8b6cd55a695884f23fc4d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86efc4d748a90867e5308baf10b5c997 = $(`<div id="html_86efc4d748a90867e5308baf10b5c997" style="width: 100.0%; height: 100.0%;">센트라스산부인과의원</div>`)[0];
+                popup_87fa5f4a7b8b6cd55a695884f23fc4d1.setContent(html_86efc4d748a90867e5308baf10b5c997);
+            
+        
+
+        circle_marker_8c66fe29314250c5a3f0c3485c29880d.bindPopup(popup_87fa5f4a7b8b6cd55a695884f23fc4d1)
+        ;
+
+        
+    
+    
+            var circle_marker_f66718d4c9e03d1f9fb4eca86d943b88 = L.circleMarker(
+                [37.53367806439041, 126.90291824743863],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_7ff3877ae5ec957045f6a31880ad9d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9badabb06242edfa6f8babafa72e2d72 = $(`<div id="html_9badabb06242edfa6f8babafa72e2d72" style="width: 100.0%; height: 100.0%;">아이엘산부인과소아청소년과의원</div>`)[0];
+                popup_7ff3877ae5ec957045f6a31880ad9d7d.setContent(html_9badabb06242edfa6f8babafa72e2d72);
+            
+        
+
+        circle_marker_f66718d4c9e03d1f9fb4eca86d943b88.bindPopup(popup_7ff3877ae5ec957045f6a31880ad9d7d)
+        ;
+
+        
+    
+    
+            var circle_marker_3e756dce66a7ce608bf7d87e2bf5fafb = L.circleMarker(
+                [37.46990721025003, 126.89704833602327],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_8d935c1b50d9a6b3c1b7a0277c182c5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ff559916204cd3c7bc9a32e3c4b0d9 = $(`<div id="html_b3ff559916204cd3c7bc9a32e3c4b0d9" style="width: 100.0%; height: 100.0%;">엠제이산부인과의원</div>`)[0];
+                popup_8d935c1b50d9a6b3c1b7a0277c182c5a.setContent(html_b3ff559916204cd3c7bc9a32e3c4b0d9);
+            
+        
+
+        circle_marker_3e756dce66a7ce608bf7d87e2bf5fafb.bindPopup(popup_8d935c1b50d9a6b3c1b7a0277c182c5a)
+        ;
+
+        
+    
+    
+            var circle_marker_6e6536b771a95be7b4ea9ce4d3b28170 = L.circleMarker(
+                [37.5623939619, 127.0332262552],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_337480f1708da17bc8051aa4fcc59865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff7b8a158bb3da4dd39a6ef2585662c4 = $(`<div id="html_ff7b8a158bb3da4dd39a6ef2585662c4" style="width: 100.0%; height: 100.0%;">연세더블유산부인과의원</div>`)[0];
+                popup_337480f1708da17bc8051aa4fcc59865.setContent(html_ff7b8a158bb3da4dd39a6ef2585662c4);
+            
+        
+
+        circle_marker_6e6536b771a95be7b4ea9ce4d3b28170.bindPopup(popup_337480f1708da17bc8051aa4fcc59865)
+        ;
+
+        
+    
+    
+            var circle_marker_649177068c19868a8cfb88cadc23f03d = L.circleMarker(
+                [37.53359879170921, 127.00869822897556],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_10c50db20b6fa80df3536efb386726f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_378bea9f90532ad64476202ae4a25e92 = $(`<div id="html_378bea9f90532ad64476202ae4a25e92" style="width: 100.0%; height: 100.0%;">연세산부인과의원</div>`)[0];
+                popup_10c50db20b6fa80df3536efb386726f8.setContent(html_378bea9f90532ad64476202ae4a25e92);
+            
+        
+
+        circle_marker_649177068c19868a8cfb88cadc23f03d.bindPopup(popup_10c50db20b6fa80df3536efb386726f8)
+        ;
+
+        
+    
+    
+            var circle_marker_341928a7d2e80e0aaaf1874c220a1e19 = L.circleMarker(
+                [37.5667996863316, 126.966255525958],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_50da8386d5bb7b79b3a168743b572944 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04a4f32f65e89dcf67e627a23de1fbe5 = $(`<div id="html_04a4f32f65e89dcf67e627a23de1fbe5" style="width: 100.0%; height: 100.0%;">연세조이산부인과의원</div>`)[0];
+                popup_50da8386d5bb7b79b3a168743b572944.setContent(html_04a4f32f65e89dcf67e627a23de1fbe5);
+            
+        
+
+        circle_marker_341928a7d2e80e0aaaf1874c220a1e19.bindPopup(popup_50da8386d5bb7b79b3a168743b572944)
+        ;
+
+        
+    
+    
+            var circle_marker_983ead44e7aa8d73c0bb3138fae8f7d6 = L.circleMarker(
+                [37.60329166666666, 127.03774722222222],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_ee6dac4b41493490fa647f7d272b6115 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b250606d786f6e0e92e6b173734ccad = $(`<div id="html_4b250606d786f6e0e92e6b173734ccad" style="width: 100.0%; height: 100.0%;">온누리산부인과의원</div>`)[0];
+                popup_ee6dac4b41493490fa647f7d272b6115.setContent(html_4b250606d786f6e0e92e6b173734ccad);
+            
+        
+
+        circle_marker_983ead44e7aa8d73c0bb3138fae8f7d6.bindPopup(popup_ee6dac4b41493490fa647f7d272b6115)
+        ;
+
+        
+    
+    
+            var circle_marker_5601b8a86e0eab3b2a83de5d2638de1a = L.circleMarker(
+                [37.5249602205031, 127.040210980624],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_9cd45facb27f4dd7810523ee91d54b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7c86584435dfe9ebda88cae43074b36 = $(`<div id="html_d7c86584435dfe9ebda88cae43074b36" style="width: 100.0%; height: 100.0%;">와이퀸산부인과의원</div>`)[0];
+                popup_9cd45facb27f4dd7810523ee91d54b14.setContent(html_d7c86584435dfe9ebda88cae43074b36);
+            
+        
+
+        circle_marker_5601b8a86e0eab3b2a83de5d2638de1a.bindPopup(popup_9cd45facb27f4dd7810523ee91d54b14)
+        ;
+
+        
+    
+    
+            var circle_marker_dde1bd558f4fed6aced429ba50e35fbd = L.circleMarker(
+                [37.450416536425344, 126.90944230157562],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_3d124688523533729f45fdea51f820aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252a6f6059b43dfb947e7b5dc271bb6e = $(`<div id="html_252a6f6059b43dfb947e7b5dc271bb6e" style="width: 100.0%; height: 100.0%;">이성림 산부인과의원</div>`)[0];
+                popup_3d124688523533729f45fdea51f820aa.setContent(html_252a6f6059b43dfb947e7b5dc271bb6e);
+            
+        
+
+        circle_marker_dde1bd558f4fed6aced429ba50e35fbd.bindPopup(popup_3d124688523533729f45fdea51f820aa)
+        ;
+
+        
+    
+    
+            var circle_marker_c338e8965f9d617bd4e8eeb1e61c6360 = L.circleMarker(
+                [37.6026764656, 127.0417737656],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_cb3452c9526dbba537c31d1391533f4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd588885d5c52dd2861ff1dea617c5ac = $(`<div id="html_fd588885d5c52dd2861ff1dea617c5ac" style="width: 100.0%; height: 100.0%;">제니산부인과의원</div>`)[0];
+                popup_cb3452c9526dbba537c31d1391533f4f.setContent(html_fd588885d5c52dd2861ff1dea617c5ac);
+            
+        
+
+        circle_marker_c338e8965f9d617bd4e8eeb1e61c6360.bindPopup(popup_cb3452c9526dbba537c31d1391533f4f)
+        ;
+
+        
+    
+    
+            var circle_marker_c3a58b9a0b4f0d8bf3d46d81dcc91e55 = L.circleMarker(
+                [37.6366190323, 127.0645381361],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_ef209837bfbd57df679a0d127f28d184 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fadf21cd6ad56f77afdee85c2f42ae1d = $(`<div id="html_fadf21cd6ad56f77afdee85c2f42ae1d" style="width: 100.0%; height: 100.0%;">제일산부인과의원</div>`)[0];
+                popup_ef209837bfbd57df679a0d127f28d184.setContent(html_fadf21cd6ad56f77afdee85c2f42ae1d);
+            
+        
+
+        circle_marker_c3a58b9a0b4f0d8bf3d46d81dcc91e55.bindPopup(popup_ef209837bfbd57df679a0d127f28d184)
+        ;
+
+        
+    
+    
+            var circle_marker_89048bc66f143539cc6eab9c0e3cbcad = L.circleMarker(
+                [37.57940480942696, 126.8904186172296],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_6e5bdd7cdd609c947bac9a602baeaeee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_524cbc545dfc556c870e758c478d8cf9 = $(`<div id="html_524cbc545dfc556c870e758c478d8cf9" style="width: 100.0%; height: 100.0%;">조지연산부인과의원</div>`)[0];
+                popup_6e5bdd7cdd609c947bac9a602baeaeee.setContent(html_524cbc545dfc556c870e758c478d8cf9);
+            
+        
+
+        circle_marker_89048bc66f143539cc6eab9c0e3cbcad.bindPopup(popup_6e5bdd7cdd609c947bac9a602baeaeee)
+        ;
+
+        
+    
+    
+            var circle_marker_ac3344e0c86288c228728ea4ea9fe8a3 = L.circleMarker(
+                [37.577210914000005, 127.0585185926],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_8c304b3f80fc721004cafd4d2917997f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63038448f29ad2558a54291e508a41f5 = $(`<div id="html_63038448f29ad2558a54291e508a41f5" style="width: 100.0%; height: 100.0%;">최은림산부인과의원</div>`)[0];
+                popup_8c304b3f80fc721004cafd4d2917997f.setContent(html_63038448f29ad2558a54291e508a41f5);
+            
+        
+
+        circle_marker_ac3344e0c86288c228728ea4ea9fe8a3.bindPopup(popup_8c304b3f80fc721004cafd4d2917997f)
+        ;
+
+        
+    
+    
+            var circle_marker_5f902e93d435dd4fc71c9847da78c8b7 = L.circleMarker(
+                [37.67912139854208, 127.0549528594317],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_fa64c117918940b249676e3b7729f5e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a92164aad5187517d5a4235a883b7004 = $(`<div id="html_a92164aad5187517d5a4235a883b7004" style="width: 100.0%; height: 100.0%;">큐빅산부인과의원</div>`)[0];
+                popup_fa64c117918940b249676e3b7729f5e0.setContent(html_a92164aad5187517d5a4235a883b7004);
+            
+        
+
+        circle_marker_5f902e93d435dd4fc71c9847da78c8b7.bindPopup(popup_fa64c117918940b249676e3b7729f5e0)
+        ;
+
+        
+    
+    
+            var circle_marker_b651d33d130a549d468052c7d78b55dd = L.circleMarker(
+                [37.57635011810339, 126.97279912680303],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2885b84969880181e5f5880d9eeefa31);
+        
+    
+        var popup_5a81f7a5df08059f6deceea138f1c16d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a2fd52f32370bc91cc7c0b736ace0f0 = $(`<div id="html_2a2fd52f32370bc91cc7c0b736ace0f0" style="width: 100.0%; height: 100.0%;">한빛산부인과의원</div>`)[0];
+                popup_5a81f7a5df08059f6deceea138f1c16d.setContent(html_2a2fd52f32370bc91cc7c0b736ace0f0);
+            
+        
+
+        circle_marker_b651d33d130a549d468052c7d78b55dd.bindPopup(popup_5a81f7a5df08059f6deceea138f1c16d)
+        ;
+
+        
+    
+</script>
+</html>
